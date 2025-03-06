@@ -6,7 +6,7 @@
   "scripts": {
     "test": "nyc --reporter=lcov jest --coverage",
     "sonar": "sonar-scanner",
-    "test:coverage": "nyc --reporter=lcov --reporter=text npm test"
+    "coverage": "nyc --reporter=lcov --reporter=text npm test"
   },
   "devDependencies": {
     "jest": "^29.7.0",
