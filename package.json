@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-project",
+  "version": "1.0.0",
+  "description": "Node.js project with Jest, NYC, and SonarQube",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc --reporter=lcov jest --coverage",
+    "sonar": "sonar-scanner",
+    "test:coverage": "nyc --reporter=lcov --reporter=text npm test"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nyc": "^17.1.0",
+    "sonarqube-scanner": "^4.2.8"
+  },
+  "jest": {
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "clover",
+      "cobertura"
+    ]
+  }
+}
